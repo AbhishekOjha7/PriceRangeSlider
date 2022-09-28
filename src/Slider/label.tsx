@@ -1,10 +1,10 @@
-import React, {memo} from 'react';
+import React from 'react';
 import {View, Text, StyleSheet} from 'react-native';
 import {COLOR} from '../utils/colors';
 import {normalize} from '../utils/dimensions';
-const Label = ({text, ...restProps}) => {
+const Label = ({text}: any) => {
   return (
-    <View style={styles.root} {...restProps}>
+    <View style={styles.root}>
       <Text style={styles.text}>{text}</Text>
     </View>
   );
@@ -19,8 +19,8 @@ const styles = StyleSheet.create({
   },
   text: {
     fontSize: 16,
-    color: '#fff',
+    color: COLOR.WHITE,
   },
 });
 
-export default memo(Label);
+export default Label;

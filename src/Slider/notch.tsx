@@ -1,12 +1,11 @@
-import React, {memo} from 'react';
+import React from 'react';
 import {View, StyleSheet} from 'react-native';
 import {COLOR} from '../utils/colors';
 import {normalize} from '../utils/dimensions';
-const Notch = (props: any) => {
-  return <View style={styles.root} {...props} />;
+const Notch = () => {
+  return <View style={styles.root} />;
 };
-
-export default memo(Notch);
+export default Notch;
 
 const styles = StyleSheet.create({
   root: {

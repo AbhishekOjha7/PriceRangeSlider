@@ -1,4 +1,4 @@
-import React, {memo} from 'react';
+import React from 'react';
 import {View, StyleSheet} from 'react-native';
 import {COLOR} from '../utils/colors';
 import {normalize} from '../utils/dimensions';
