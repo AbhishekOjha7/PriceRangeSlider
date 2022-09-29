@@ -33,3 +33,7 @@ Installation:
  * @props {onSliderTouchStart} will be calld when user start interaction with slider
  * @props {onValueChanged} Will be called when a value was changed.
  */
+ 
+ [README.md](https://github.com/AbhishekOjha7/PriceRangeSlider/files/9671268/README.md)
+
+ 
