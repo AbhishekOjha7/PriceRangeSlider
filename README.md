@@ -16,10 +16,6 @@ https://user-images.githubusercontent.com/103095958/192442814-04033bf7-c0f2-4996
     iOS: cd ios && pod install && cd ..   
      For android :nothing do anything
 
- Linking:
-    For newer React native versions ( >= 0.60 ) you need to install pods for iOS:
-    cd ios && pod install && cd ..
-    For android same like that
     
  Properties:
   /**
