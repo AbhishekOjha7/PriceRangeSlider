@@ -3,10 +3,18 @@
 https://user-images.githubusercontent.com/103095958/192442814-04033bf7-c0f2-4996-a82d-d02930a34790.mov
 
 
-Installation:
-  1.ADD
-   npm: npm install --save rn-range-slider
-   yarn: yarn add rn-range-slider
+
+## Installation
+
+1.ADD  
+ npm :npm install --save rn-range-slider.  
+ yarn: yarn add rn-range-slider
+
+ Linking:
+  For newer React native versions ( >= 0.60 )
+   you need to install pods for.  
+    iOS: cd ios && pod install && cd ..   
+     For android :nothing do anything
 
  Linking:
     For newer React native versions ( >= 0.60 ) you need to install pods for iOS:
