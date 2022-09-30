@@ -38,6 +38,14 @@ https://user-images.githubusercontent.com/103095958/192442814-04033bf7-c0f2-4996
 | onSliderTouchStart|function|will be calld when user start interaction with slider|
 | onValueChanged|function|Will be called when a value was changed|
 | minRange|number|is used for Minimum range of thumbs allowed to be selected by the user|
+| stylethumbHigh|StyleProp<ViewProps>|this is the styling props of renderThumb of high|
+| name | string| this is props name whose take string 'high' and 'low'
+| stylethumbLow| StyleProp<ViewProps>|this is the styling props of renderThumb of low|
+| railStyle| StyleProp<ViewProps>| this is the styling props of rail|
+| railselectedStyle|StyleProp<ViewProps>|this is the styling props of selectedRail|
+| notchStyle| StyleProp<ViewProps>|this is the props of notch styling|
+| labelStyle |StyleProp<ViewProps>| this is the label props for styling|
+| text| string|it takes the value of the label|
 
 
 
