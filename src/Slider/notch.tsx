@@ -1,9 +1,13 @@
 import React from 'react';
-import {View, StyleSheet} from 'react-native';
+import {View, StyleSheet, StyleProp, ViewProps} from 'react-native';
 import {COLOR} from '../utils/colors';
 import {normalize} from '../utils/dimensions';
-const Notch = () => {
-  return <View style={styles.root} />;
+interface notchProps {
+  notchStyle?: StyleProp<ViewProps>;
+}
+const Notch = (props: notchProps) => {
+  const {notchStyle} = props;
+  return <View style={[styles.root, notchStyle]} />;
 };
 export default Notch;
 

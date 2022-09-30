@@ -1,11 +1,22 @@
-import {StyleSheet, TouchableOpacity} from 'react-native';
+import {StyleSheet, TouchableOpacity, StyleProp, ViewProps} from 'react-native';
 import React from 'react';
 import {COLOR} from '../utils/colors';
 import {normalize} from '../utils/dimensions';
-const Thumb = ({name}: any) => {
+interface thumbProps {
+  stylethumbHigh?: StyleProp<ViewProps>;
+  name?: string;
+  stylethumbLow?: StyleProp<ViewProps>;
+}
+const Thumb = (props: thumbProps) => {
+  const {name, stylethumbHigh, stylethumbLow} = props;
+
   return (
     <TouchableOpacity
-      style={name == 'high' ? styles.rootHigh : styles.rootLow}
+      style={
+        name == 'high'
+          ? [styles.rootHigh, stylethumbHigh]
+          : [styles.rootLow, stylethumbLow]
+      }
     />
   );
 };

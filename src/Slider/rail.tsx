@@ -1,9 +1,13 @@
 import React from 'react';
-import {View, StyleSheet} from 'react-native';
+import {View, StyleSheet, StyleProp, ViewProps} from 'react-native';
 import {COLOR} from '../utils/colors';
 import {normalize} from '../utils/dimensions';
-const Rail = () => {
-  return <View style={styles.root} />;
+interface railProps {
+  railStyle?: StyleProp<ViewProps>;
+}
+const Rail = (props: railProps) => {
+  const {railStyle} = props;
+  return <View style={[styles.root, railStyle]} />;
 };
 
 export default Rail;

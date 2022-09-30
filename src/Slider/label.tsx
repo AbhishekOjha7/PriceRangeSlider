@@ -1,11 +1,17 @@
 import React from 'react';
-import {View, Text, StyleSheet} from 'react-native';
+import {View, Text, StyleSheet, StyleProp, ViewProps} from 'react-native';
 import {COLOR} from '../utils/colors';
 import {normalize} from '../utils/dimensions';
-const Label = ({text}: any) => {
+interface labelProps {
+  labelStyle?: StyleProp<ViewProps>;
+  text: string;
+  labeltxtStyle?: StyleProp<ViewProps>;
+}
+const Label = (props: labelProps) => {
+  const {text, labelStyle, labeltxtStyle} = props;
   return (
-    <View style={styles.root}>
-      <Text style={styles.text}>{text}</Text>
+    <View style={[styles.root, labelStyle]}>
+      <Text style={[styles.text, labeltxtStyle]}>{text}</Text>
     </View>
   );
 };
